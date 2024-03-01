@@ -2,11 +2,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// include your styles into the webpack bundle
+
+//include your index.scss file into the bundle
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import { Player } from "./component/player.js";
+import { Player2 } from "./component/player_noapi";
+import { Player3 } from "./component/player_hooks";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<Player3 />, document.querySelector("#app"));
